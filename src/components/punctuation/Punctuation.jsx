@@ -29,13 +29,15 @@ export default function Punctuation() {
 
   return (
     <div className={s.containerd}>
+      <div className={s.image}>
       <img
         src="/WhatsApp Image 2023-07-26 at 19.13.37.jpeg"
         alt="foot"
       />
+      </div>
       <div className={s.content_0}>
         <div className={s.content_1}>
-          <h3 style={{color:"red" ,letterSpacing:"4px",textAlign:"center"}}>¡ menu ☁️</h3>
+          <h3 style={{color:"red" ,letterSpacing:"4px",textAlign:"center"}}>¡ menú ☁️</h3>
           <h2>¿Cómo te fue en la app?</h2>
           <div>
             <div className={s.content_star}>{renderStars()}</div>

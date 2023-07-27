@@ -6,7 +6,13 @@
     width: 100%;
     overflow: hidden;
 }
-
+.image{
+}
+img{
+    width: 100%;
+    height: 46vh;
+    object-fit: cover;
+}
 .content_0{
     display: flex;
     justify-content: space-around;
@@ -14,6 +20,7 @@
     flex-direction: column;
     height: 50vh;
     width: 100%;
+
 }
 
 .content_1{
@@ -26,10 +33,6 @@
     font-size: 30px;
     color: rgb(159, 161, 156);
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
-}
-
-.content_2{
-  /*   margin: 4rem 0; */
 }
 
 h1{
@@ -46,7 +49,6 @@ button{
     background: #000;
     color: #fff;
     width: 90%;
-    height: 50px;
     font-size: 35px;
     border-radius: 15px;
 }
