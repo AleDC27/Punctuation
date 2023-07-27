@@ -19,8 +19,10 @@ export default function Reviews() {
     <>
       {send ? (
         <div className={s.containerd}>
+            <section className={s.content}>
           <b>Danos tu opinión</b>
           <span className={s.caracteres}>{caracteres}/240</span>
+            </section>
           <br />
           <textarea
             maxLength="100"

@@ -1,15 +1,26 @@
 .containerd{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 0 -17px 0;
+}
 b{
-    position: fixed;
-    left: 30px;
+/*     position: fixed;
+    right: start; */
+    margin: 0 30px 0 0;
 }
 .caracteres{
-    position: fixed;
-    left: 290px;
+/*     position: fixed;
+    left: start; */
     font-size: 12px;
+    margin: 0 0 0 30px;
     color: rgb(128, 132, 134);
 }
 
