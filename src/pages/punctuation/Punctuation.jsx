@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Icon } from "semantic-ui-react";
 import s from './Punctuation.module.css';
-import Reviews from "../reviews/Reviews";
+import Reviews from "../../components/reviews/Reviews";
 
 export default function Punctuation() {
   const [rating, setRating] = useState(0);
@@ -38,7 +38,11 @@ export default function Punctuation() {
       </div>
       <div className={s.content_0}>
         <div className={s.content_1}>
-          <h4 style={{color:"red" ,letterSpacing:"4px",textAlign:"center"}}>¡ menú ☁️</h4>
+          <h4 style={{color:"red" ,letterSpacing:"4px",textAlign:"center"}}>{`¡ menú `}
+          <div style={{display:"inline",background:"red",padding:"1px"}}>
+           <Icon size="small" name='cloud' className={s.cloud}/>
+          </div>
+          </h4>
           <h3>¿Cómo te fue en la app?</h3>
           <div>
             <div className={s.content_star}>{renderStars()}</div>
