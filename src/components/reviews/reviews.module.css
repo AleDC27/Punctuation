@@ -1,0 +1,39 @@
+.containerd{
+    width: 100%;
+}
+
+b{
+    position: fixed;
+    left: 30px;
+}
+.caracteres{
+    position: fixed;
+    left: 250px;
+    font-size: 12px;
+    color: rgb(128, 132, 134);
+}
+
+textarea{
+    width: 80%;
+    height: 75px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(128, 132, 134, 0.171);;
+}
+textarea::placeholder {
+    /* Estilos para el placeholder */
+    font-size: 11px; /* Tamaño de letra deseado para el placeholder */
+  }
+
+.send{
+    color: #000;
+    background: #fff;
+    border: #000 solid 2px;
+    border-radius: 8px;
+    width: 35%;
+    padding: 5px;
+    font-size: 15px;
+}
+.send:active {
+    background-color: #494646;
+  }
