@@ -38,7 +38,7 @@ export default function Punctuation() {
       </div>
       <div className={s.content_0}>
         <div className={s.content_1}>
-          <h4 style={{color:"red" ,letterSpacing:"4px",textAlign:"center"}}>{`¡ menú `}
+          <h4 style={{color:"red" ,letterSpacing:"4px",textAlign:"center"}}>{`imenú `}
           <div style={{display:"inline",background:"red",padding:"1px"}}>
            <Icon size="small" name='cloud' className={s.cloud}/>
           </div>
