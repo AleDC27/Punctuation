@@ -8,7 +8,7 @@ b{
 }
 .caracteres{
     position: fixed;
-    left: 250px;
+    left: 290px;
     font-size: 12px;
     color: rgb(128, 132, 134);
 }
@@ -18,7 +18,9 @@ textarea{
     height: 75px;
     border-radius: 10px;
     padding: 5px;
-    background-color: rgba(128, 132, 134, 0.171);;
+    background-color: rgba(128, 132, 134, 0.171);
+    text-decoration: none;
+    font-size: 5px;
 }
 textarea::placeholder {
     /* Estilos para el placeholder */
