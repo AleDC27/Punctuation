@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Icon } from "semantic-ui-react";
 import s from './Punctuation.module.css';
 import Reviews from "../../components/reviews/Reviews";
+import { Link } from "react-router-dom";
+import ListFood from "../list/ListFood";
 
 export default function Punctuation() {
   const [rating, setRating] = useState(0);
@@ -52,7 +54,9 @@ export default function Punctuation() {
           <Reviews/>
         </div>
         <br />
+        <Link to="/listFood" className={s.re_order}>
         <button className={s.re_order} style={{fontSize:"28px"}}>Volver a pedir</button>
+        </Link>
       </div>
     </div>
   );
