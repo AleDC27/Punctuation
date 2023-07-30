@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./reviews.module.css";
 import { useState } from "react";
+import Confetti from 'react-confetti';
 
 export default function Reviews() {
   const [send, setSend] = useState(true);
@@ -35,6 +36,7 @@ export default function Reviews() {
         </div>
       ) : (
         <div style={{textAlign:"center",width:"100%"}}>
+          <Confetti numberOfPieces={150}/>
           <h1>¡Gracias!</h1>
           <span>Tu opinión nos ayuda a crecer</span>
         </div>

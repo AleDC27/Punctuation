@@ -1,0 +1,12 @@
+.gestiona{
+    color: rgb(144, 147, 150);
+    font-size: 15px;
+}
+
+.list{
+    color: #fff;
+    background:#000;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+}
