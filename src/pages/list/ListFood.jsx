@@ -8,7 +8,7 @@ import { emoji, price, nameProduct,foods } from "./list";
 import { useState } from "react";
 
 export default function ListFood() {
-  const [onOffStates, setOnOffStates] = useState(emoji.map(() => true));
+  const [onOffStates, setOnOffStates] = useState(foods.map(() => true));
 
   const handleClickEyes = (index) => {
     const newOnOffStates = [...onOffStates];
@@ -55,7 +55,7 @@ export default function ListFood() {
             <div style={{width:"80%",display:"flex",borderBottom:"solid 1px",padding:"0 0 5px 0"}} > 
             <span style={{width:"60%",textAlign:"start",fontSize:"15px"}}>{cur.name}</span>
             <span style={{width:"20%",textAlign:"center"}}>{cur.price}</span>
-            <span style={{width:"20%",textAlign:"center"}}><Icon name="eye"/> </span>
+            <span style={{width:"20%",textAlign:"center"}}><Icon name={onOffStates[idx] ? "eye" : "eye slash"} onClick={()=>handleClickEyes(idx)} /> </span>
             </div>
           </article> )}
         </div>
