@@ -39,5 +39,7 @@
 article{
     width: 100%;
     display: flex !important;
+    align-items: center;
     margin: 5px 0;
+    height: 35px;
 }

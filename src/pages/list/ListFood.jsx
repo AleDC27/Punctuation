@@ -49,10 +49,14 @@ export default function ListFood() {
         </div>
         <div className={s.content_seg}>
           {foods.map((cur,idx)=> <article key={idx}>
-            <span style={{width:"20%",textAlign:"center"}}>{cur.emoji}<Icon name="angle down"/></span>
-            <span style={{width:"44%",textAlign:"start",fontSize:"15px"}}>{cur.name}</span>
-            <span style={{width:"18%",textAlign:"center"}}>{cur.price}</span>
-            <span style={{width:"18%",textAlign:"center"}}><Icon name="eye"/> </span>
+            <div style={{width:"20%",textAlign:"center"}}>
+            <span style={{width:"100%",borderRadius:"5px",padding:"2px",background:"#d9d9d8"}}>{cur.emoji}<Icon name="angle down"/></span>
+            </div>
+            <div style={{width:"80%",display:"flex",borderBottom:"solid 1px",padding:"0 0 5px 0"}} > 
+            <span style={{width:"60%",textAlign:"start",fontSize:"15px"}}>{cur.name}</span>
+            <span style={{width:"20%",textAlign:"center"}}>{cur.price}</span>
+            <span style={{width:"20%",textAlign:"center"}}><Icon name="eye"/> </span>
+            </div>
           </article> )}
         </div>
       </div>
