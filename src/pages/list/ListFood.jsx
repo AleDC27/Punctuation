@@ -43,16 +43,16 @@ export default function ListFood() {
       <div className={s.list}>
         <div className={s.content_1} > 
           <span style={{width:"20%"}}>Emoji</span>
-          <span style={{width:"40%"}}>Producto</span>
-          <span style={{width:"20%"}}>Precio</span>
-          <span style={{width:"20%"}}>On/Off</span>
+          <span style={{width:"44%"}}>Producto</span>
+          <span style={{width:"18%"}}>Precio</span>
+          <span style={{width:"18%"}}>On/Off</span>
         </div>
-        <div className={s.content_2}>
+        <div className={s.content_seg}>
           {foods.map((cur,idx)=> <article key={idx}>
-            <span style={{width:"20%"}}>{cur.emoji}<Icon name="angle down"/></span>
-            <span style={{width:"40%",fontSize:"15px"}}>{cur.name}</span>
-            <span style={{width:"20%"}}>{cur.price}</span>
-            <span style={{width:"20%"}}>{cur.emoji} <Icon name="eye"/> </span>
+            <span style={{width:"20%",textAlign:"center"}}>{cur.emoji}<Icon name="angle down"/></span>
+            <span style={{width:"44%",textAlign:"start",fontSize:"15px"}}>{cur.name}</span>
+            <span style={{width:"18%",textAlign:"center"}}>{cur.price}</span>
+            <span style={{width:"18%",textAlign:"center"}}><Icon name="eye"/> </span>
           </article> )}
         </div>
       </div>

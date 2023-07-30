@@ -16,7 +16,7 @@
     display: flex;
 
 }
-.content_2{
+.content_seg{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -37,6 +37,7 @@
 }
 
 article{
-    display: flex;
-    text-align: center;
+    width: 100%;
+    display: flex !important;
+    margin: 5px 0;
 }
