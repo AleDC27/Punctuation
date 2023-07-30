@@ -4,9 +4,39 @@
 }
 
 .list{
-    color: #fff;
-    background:#000;
     text-decoration: none;
     list-style: none;
     display: flex;
+    flex-direction: column;
+}
+.content_1{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    display: flex;
+
+}
+.content_2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.emoji{
+    width: 20%;
+
+}
+.product{
+    width: 40%;
+}
+.price{
+    width: 20%;
+}
+.on_off{
+    width: 20%;
+}
+
+article{
+    display: flex;
+    text-align: center;
 }

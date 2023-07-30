@@ -6,7 +6,7 @@ export default function Nav() {
     <nav className={s.nav}>
         <Icon name='bars'/>
         <>
-        <span>{`¡ m e n ú `}<Icon name='cloud' className={s.cloud} /></span>
+        <span>{`i m e n ú `}<Icon name='cloud' className={s.cloud} /></span>
         </>
         <Icon name='user outline'/>
     </nav>
