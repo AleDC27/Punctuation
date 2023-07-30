@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Icon } from "semantic-ui-react";
-import s from './Punctuation.module.css';
+import s from "./Punctuation.module.css";
 import Reviews from "../../components/reviews/Reviews";
 import { Link } from "react-router-dom";
 import ListFood from "../list/ListFood";
@@ -33,17 +33,19 @@ export default function Punctuation() {
   return (
     <div className={s.containerd}>
       <div className={s.image}>
-      <img
-        src="/WhatsApp Image 2023-07-26 at 19.13.37.jpeg"
-        alt="foot"
-      />
+        <img src="/WhatsApp Image 2023-07-26 at 19.13.37.jpeg" alt="foot" />
       </div>
       <div className={s.content_0}>
         <div className={s.content_1}>
-          <h4 style={{color:"red" ,letterSpacing:"4px",textAlign:"center"}}>{`imenú `}
-          <div style={{display:"inline",background:"red",padding:"1px"}}>
-           <Icon size="small" name='cloud' className={s.cloud}/>
-          </div>
+          <h4
+            style={{ color: "red", letterSpacing: "4px", textAlign: "center" }}
+          >
+            {`imenú `}
+            <div
+              style={{ display: "inline", background: "red", padding: "1px" }}
+            >
+              <Icon size="small" name="cloud" className={s.cloud} />
+            </div>
           </h4>
           <h3>¿Cómo te fue en la app?</h3>
           <div>
@@ -51,11 +53,11 @@ export default function Punctuation() {
           </div>
         </div>
         <div className={s.content_2}>
-          <Reviews/>
+          <Reviews />
         </div>
         <br />
         <Link to="/listFood" className={s.re_order}>
-        <button className={s.re_order} style={{fontSize:"28px"}}>Volver a pedir</button>
+          Volver a pedir
         </Link>
       </div>
     </div>
