@@ -13,12 +13,17 @@ body{
 /* @import "./semantic-ui/index.scss"; */
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: $text-primary;
 }
 
 body {
-  margin: 0;
   background-color: $background-primary;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* h1,

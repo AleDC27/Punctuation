@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./reviews.module.css";
+import s from "./reviews.module.scss";
 import { useState } from "react";
 import Confetti from 'react-confetti';
 
@@ -22,11 +22,11 @@ export default function Reviews() {
         <div className={s.containerd}>
             <section className={s.content}>
           <b>Danos tu opinión</b>
-          <span className={s.caracteres}>{caracteres}/240</span>
+          <span>{caracteres}/240</span>
             </section>
           <br />
           <textarea
-            maxLength="100"
+            maxLength="240"
             id="miTextarea"
             placeholder="¿Te gustá nuestra forma de hacer las cosas?"
             onChange={handleChange}

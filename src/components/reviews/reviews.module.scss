@@ -1,0 +1,59 @@
+@import '../../scss/colors.scss';
+
+.containerd{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    >textarea{
+        width: 80%;
+        height: 75px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: rgba(128, 132, 134, 0.171);
+        text-decoration: none;
+        font-size: 14px;
+        &::placeholder { /* Anida el selector del placeholder dentro del selector del textarea */
+            font-size: 12px; /* Utiliza la variable para el tamaño de letra del placeholder */
+          }
+    }
+
+    >button{
+        color: #000;
+        background: #fff;
+        border: #000 solid 2px;
+        border-radius: 8px;
+        width: 35%;
+        padding: 5px;
+        font-size: 15px;
+        &:active {
+            background-color: #494646;
+          }
+    }
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 0 -17px 0;
+    >b{
+    /*     position: fixed;
+        right: start; */
+        margin: 0 30px 0 0;
+    }
+    >span{
+        /*     position: fixed;
+    left: start; */
+    font-size: 12px;
+    margin: 0 0 0 30px;
+    color: rgb(128, 132, 134);
+    }
+}
+
+
+
+
+.send:active {
+    background-color: #494646;
+  }
