@@ -1,5 +1,5 @@
 import { Icon } from 'semantic-ui-react';
-import s from './nav.module.css';
+import s from './nav.module.scss';
 
 export default function Nav() {
   return (
