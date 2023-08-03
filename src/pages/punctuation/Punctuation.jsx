@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Icon } from "semantic-ui-react";
-import s from "./Punctuation.module.css";
+import s from "./Punctuation.module.scss";
 import Reviews from "../../components/reviews/Reviews";
 import { Link } from "react-router-dom";
-import ListFood from "../list/ListFood";
 
 export default function Punctuation() {
   const [rating, setRating] = useState(0);
@@ -36,10 +35,8 @@ export default function Punctuation() {
         <img src="/WhatsApp Image 2023-07-26 at 19.13.37.jpeg" alt="foot" />
       </div>
       <div className={s.content_0}>
-        <div className={s.content_1}>
-          <h4
-            style={{ color: "red", letterSpacing: "4px", textAlign: "center" }}
-          >
+        <div>
+          <h4>
             {`imenú `}
             <div
               style={{ display: "inline", background: "red", padding: "1px" }}
