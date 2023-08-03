@@ -1,8 +1,14 @@
 @import '../../scss/colors.scss';
 
-.gestiona{
-    color: rgb(144, 147, 150);
-    font-size: 15px;
+
+.content_menu{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 1rem;
+    >span{
+        color: $text-desable;
+        font-size: 15px;
+    }
 }
 
 .list{
@@ -11,20 +17,26 @@
     display: flex;
     flex-direction: column;
 }
-.content_1{
-    background-color: #000;
-    color: #fff;
+.list_content_1{
+    background-color: $background-secundary;
+    color: $text-secondary;
     width: 100%;
     display: flex;
 
 }
-.content_seg{
+.list_content_2{
     width: 100%;
     display: flex;
     flex-direction: column;
-
+    >article{
+        width: 100%;
+        display: flex !important;
+        align-items: center;
+        margin: 5px 0;
+        height: 35px;
+    }
 }
-.emoji{
+/* .emoji{
     width: 20%;
 
 }
@@ -36,12 +48,12 @@
 }
 .on_off{
     width: 20%;
-}
+} */
 
-article{
+/* article{
     width: 100%;
     display: flex !important;
     align-items: center;
     margin: 5px 0;
     height: 35px;
-}
+} */

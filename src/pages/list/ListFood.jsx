@@ -18,15 +18,8 @@ export default function ListFood() {
   return (
     <>
       <Nav />
-      <TbArrowBackUp size={35} style={{ margin: "1rem 0 1rem 1rem" }} />
-      <br />
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          margin: "0 0 0 1rem",
-        }}
-      >
+      <TbArrowBackUp size={30} style={{ margin: "1rem 0 1rem 0.7rem" }} />
+      <div className={s.content_menu}>
         <h3>
           <MdLibraryBooks
             style={{
@@ -37,16 +30,16 @@ export default function ListFood() {
           />{" "}
           Menú {">"} Gestionar menú actual
         </h3>
-        <span className={s.gestiona}>Gestiona tu menú desde aquí</span>
+        <span>Gestiona tu menú desde aquí</span>
       </div>
       <div className={s.list}>
-        <div className={s.content_1} > 
+        <div className={s.list_content_1} > 
           <span style={{width:"20%"}}>Emoji</span>
           <span style={{width:"44%"}}>Producto</span>
           <span style={{width:"18%"}}>Precio</span>
           <span style={{width:"18%"}}>On/Off</span>
         </div>
-        <div className={s.content_seg}>
+        <div className={s.list_content_2}>
           {foods.map((cur,idx)=> <article key={idx}>
             <div style={{width:"20%",textAlign:"center"}}>
             <span style={{width:"100%",borderRadius:"5px",padding:"2px",background:"#d9d9d8"}}>{cur.emoji}<Icon name="angle down"/></span>
