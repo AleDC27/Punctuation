@@ -1,10 +1,9 @@
 import Nav from "../../components/nav/Nav";
 import { Icon } from "semantic-ui-react";
-import { FaBeer } from "react-icons/fa";
 import { TbArrowBackUp } from "react-icons/tb";
 import { MdLibraryBooks } from "react-icons/md";
-import s from "./listFood.module.css";
-import { emoji, price, nameProduct,foods } from "./list";
+import s from "./listFood.module.scss";
+import { foods } from "./list";
 import { useState } from "react";
 
 export default function ListFood() {

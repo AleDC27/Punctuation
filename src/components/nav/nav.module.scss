@@ -4,11 +4,16 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 0.5rem;
-/*   background-color: #ff4441; */
   background-color: $background-Nav;
+  color: $text-secondary;
+  >span{
+    letter-spacing:4px;
+  }
   
   .cloud{
-    background-color: #fff;
-    color: #ff4441;
+    background-color: $text-secondary;
+    width: 18px;
+    height: 18px;
+    color: $background-Nav;
   }
 }
