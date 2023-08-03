@@ -33,23 +33,33 @@ export default function ListFood() {
         <span>Gestiona tu menú desde aquí</span>
       </div>
       <div className={s.list}>
-        <div className={s.list_content_1} > 
-          <span style={{width:"20%"}}>Emoji</span>
-          <span style={{width:"44%"}}>Producto</span>
-          <span style={{width:"18%"}}>Precio</span>
-          <span style={{width:"18%"}}>On/Off</span>
+        <div className={s.list_content_1}>
+          <span style={{ width: "20%" }}>Emoji</span>
+          <span style={{ width: "44%" }}>Producto</span>
+          <span style={{ width: "18%" }}>Precio</span>
+          <span style={{ width: "18%" }}>On/Off</span>
         </div>
         <div className={s.list_content_2}>
-          {foods.map((cur,idx)=> <article key={idx}>
-            <div style={{width:"20%",textAlign:"center"}}>
-            <span style={{width:"100%",borderRadius:"5px",padding:"2px",background:"#d9d9d8"}}>{cur.emoji}<Icon name="angle down"/></span>
-            </div>
-            <div style={{width:"80%",display:"flex",borderBottom:"solid 1px",padding:"0 0 5px 0"}} > 
-            <span style={{width:"60%",textAlign:"start",fontSize:"15px"}}>{cur.name}</span>
-            <span style={{width:"20%",textAlign:"center"}}>{cur.price}</span>
-            <span style={{width:"20%",textAlign:"center"}}><Icon name={onOffStates[idx] ? "eye" : "eye slash"} onClick={()=>handleClickEyes(idx)} /> </span>
-            </div>
-          </article> )}
+          {foods.map((cur, idx) => (
+            <article key={idx} className={s.list_content_2_menu} >
+              <div>
+                <span className={onOffStates[idx]?s.span_active:s.span_inactive}>
+                  {cur.emoji}
+                  <Icon name="angle down" />
+                </span>
+              </div>
+              <div>
+                <span className={onOffStates[idx]?s.span_active:s.span_inactive}>{cur.name}</span>
+                <span className={onOffStates[idx]?s.span_active:s.span_inactive}>{cur.price}</span>
+                <span className={onOffStates[idx]?s.span_active:s.span_inactive}>
+                  <Icon
+                    name={onOffStates[idx] ? "eye" : "eye slash"}
+                    onClick={() => handleClickEyes(idx)}
+                  />{" "}
+                </span>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </>
