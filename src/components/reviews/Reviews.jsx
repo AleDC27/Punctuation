@@ -2,8 +2,10 @@ import React from "react";
 import s from "./reviews.module.scss";
 import { useState } from "react";
 import Confetti from 'react-confetti';
+import { useTranslation } from 'react-i18next';
 
 export default function Reviews() {
+  const [t,i18n]=useTranslation("global");
   const [send, setSend] = useState(true);
   const [caracteres,setCaracteres]=useState(0);
 
@@ -21,24 +23,24 @@ export default function Reviews() {
       {send ? (
         <div className={s.containerd}>
             <section className={s.content}>
-          <b>Danos tu opinión</b>
+          <b>{t("reviews.Write your review")}</b>
           <span>{caracteres}/240</span>
             </section>
           <br />
           <textarea
             maxLength="240"
             id="miTextarea"
-            placeholder="¿Te gustá nuestra forma de hacer las cosas?"
+            placeholder={t("reviews.Do you like our way of doing things?")}
             onChange={handleChange}
           ></textarea>
           <br />
-          <button className={s.send} onClick={handleClikc}>Enviar</button>
+          <button className={s.send} onClick={handleClikc}>{t("reviews.send")}</button>
         </div>
       ) : (
         <div style={{textAlign:"center",width:"100%"}}>
-          <Confetti numberOfPieces={150}/>
-          <h1>¡Gracias!</h1>
-          <span>Tu opinión nos ayuda a crecer</span>
+          <Confetti numberOfPieces={200}/>
+          <h1>{t("reviews.Thank you!")}</h1>
+          <span>{t("reviews.Your opinion helps us grow")}</span>
         </div>
       )}
     </>

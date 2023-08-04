@@ -1,0 +1,13 @@
+{
+    "reviews":{
+        "hello-world":"Hello world",
+        "send":"Send",
+        "Write your review":"Write your review",
+        "Do you like our way of doing things?":"Do you like our way of doing things?",
+        "Thank you!":"Thank you!",
+        "Your opinion helps us grow":"Your opinion helps us grow"
+    },
+    "punctuation":{
+        "How did you do on the app?":"How did you do on the app?"
+    }
+}

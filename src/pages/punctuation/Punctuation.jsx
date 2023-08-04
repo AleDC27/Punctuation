@@ -3,8 +3,10 @@ import { Icon } from "semantic-ui-react";
 import s from "./Punctuation.module.scss";
 import Reviews from "../../components/reviews/Reviews";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 export default function Punctuation() {
+  const [t,i18n]=useTranslation("global");
   const [rating, setRating] = useState(0);
 
   const handleStarClick = (starIndex) => {
@@ -44,7 +46,7 @@ export default function Punctuation() {
               <Icon size="small" name="cloud" className={s.cloud} />
             </div>
           </h4>
-          <h3>¿Cómo te fue en la app?</h3>
+          <h3>{t("punctuation.How did you do on the app?")}</h3>
           <div>
             <div className={s.content_star}>{renderStars()}</div>
           </div>
